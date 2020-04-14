@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'html_app/tutorials.css' %}">
+
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+
+
+        <div class="innercontent">
+            <h1>Form</h1><br>
+            <div class="row">
+                <div class="column left">
+                    In this section we are going to talk about forms. However, before we start, I want to say a couple
+                    words about HTML structure. HTML has a lot of tags and looking at them for the first time might seem
+                    intimidating. Well, it is really not. The thing is, almost all main tags in HTML are intersecting
+                    with each other.
+                    <br>In this mini-tutorial you'll be able to observe that. I will be using the same form for all four
+                    components of this HTML tutorial. Let's start!<br><br>
+                    On the right hand side of the page you see a simple form, consisting of four elements - three fields
+                    and one button. Now, lets view the code of this form and figure out how it works! <br>To be able to
+                    see the HTML script with this form - highlight any object of that form - 'Name' for example. Then
+                    right-click your mouse and select the <strong>inspect</strong> option. A window will pop-up in your
+                    browser and you'll be able to see the form, it will be highlighted in the Elements tab. Now that you
+                    see the form, lets go over it. <br>
+                    The declaration of the form looks like this: <br>< form action="" class="myform" method="get"><br>
+                    You can see the two main attributes of the form, I mentioned earlier: action and method. <br>
+                    The action attribute defines the location (URL) where the form's collected data should be sent when
+                    it is submitted. <br>
+                    The method attribute defines which HTTP method to send the data with (usually get or post).<br>
+                    The action of our form is blank, which means after clicking the button, we won't actually send out
+                    data anywhere. Method of this form is GET - and your can observe that - when submitting the form,
+                    look at the url of your page. You will see the query formed with the GET method. You can read more
+                    about POST and GET methods following the links I'll leave in the references tab in the web-page
+                    header.
+                </div>
+                <div class="column right">
+                    <form action="" class="myform" method="get">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name">
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_email">
+                            </li>
+                            <li>
+                                <label for="msg"><a href="/html/anchor/">Message:</a></label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li>
+                                <input type="submit" value="Send your message!">
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}

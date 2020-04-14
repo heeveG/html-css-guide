@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML/CSS Guide</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    {% block link %}
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    {% endblock %}
+</head>
+<body>
+
+<div class="header">
+    <div class="innerheader">
+        <div class="logo">
+            <h1><a href="/"><span>HTML 5</span> & <span>CSS</span></a></h1>
+        </div>
+        <ul class="nav">
+            <a href="/">
+                <li>Home</li>
+            </a>
+            <a href="/html/">
+                <li>HTML Features</li>
+            </a>
+            <a href="/css/">
+                <li>CSS Features</li>
+            </a>
+            <a href="/references/">
+                <li>References</li>
+            </a>
+            <a href="/about/">
+                <li>About</li>
+            </a>
+        </ul>
+    </div>
+</div>
+
+
+
+{% block content %}
+
+
+    <div class="content">
+        <div class="innercontent">
+            <div class="row">
+                <div class="column left">
+                    <img src="{% static 'img/html_css.png' %}">
+
+
+                </div>
+
+                <div class="column right">
+                    <h1><strong>Layout making is great!</h1></strong>
+                    <br>
+                    When it comes to the success of a website, the most important aspect of the site is the page’s
+                    layout. The website must be clean with an easy-to-follow navigation system to contribute to a usable
+                    webpage layout.
+                    A layout that is easy to follow will give the site’s visitor easy access valuable and important
+                    information. There are many useful tools for creating layouts, however, having the understanding of
+                    how things work in the core is crucial for becoming a successful web-developer. This website will
+                    help you on your way! <br>
+
+                    <form action="html/">
+                        <button class="btn btn-1" type="sumbit">
+                            HTML5
+                        </button>
+                    </form>
+                    <form action="css/">
+                        <button class="btn btn-2" type="sumbit">
+                            CSS
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+<div class="footer">
+    <div class="innerfooter">
+        <div class="logofooter">
+            <h1>Created by <span class="name">Nazar Pasternak</span></h1>
+        </div>
+        <ul class="foot">
+            <a href="https://github.com/heeveG/">
+                <li>Github</li>
+            </a>
+            <a href="https://www.facebook.com/Cloudxdxd">
+                <li>Facebook</li>
+            </a>
+            <a href="mailto:nazarpasternak2001@gmail.com">
+                <li>Email</li>
+            </a>
+        </ul>
+    </div>
+</div>
+
+</html>

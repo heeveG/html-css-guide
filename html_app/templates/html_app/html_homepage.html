@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'html_app/style.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="content">
+        <div class="innercontent">
+            <div class="row">
+                <div class="column left">
+
+
+                    <h1><strong>HTML 5</h1></strong>
+                    <br>
+                    HTML5 is a markup language used for structuring and presenting content on the World Wide Web. <br>
+                    <br>
+                    HTML5 has been designed to deliver almost everything you'd want to do online without requiring
+                    additional software such as browser plugins. It does everything from animation to apps, music to
+                    movies, and can also be used to build incredibly complicated applications that run in your browser.
+                    <br><br> There's more. HTML5 isn't proprietary, so you don't need to pay royalties to use it. It's
+                    also cross-platform, which means it doesn't care whether you're using a tablet or a smartphone, a
+                    netbook, notebook or ultrabook or a Smart TV: if your browser supports HTML5, it should work
+                    flawlessly.
+                    <br>
+                    <form action="list/">
+                        <button class="btn" type="sumbit">
+                            Learn HTML5
+                        </button>
+                    </form>
+
+
+                </div>
+
+                <div class="column right">
+                    <img src="{% static 'img/html.svg' %}">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

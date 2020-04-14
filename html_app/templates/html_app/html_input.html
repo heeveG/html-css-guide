@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'html_app/tutorials.css' %}">
+
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+
+
+        <div class="innercontent">
+            <h1>Input</h1><br>
+            <div class="row">
+                <div class="column left">
+                    This section is about <strong>input</strong> element. It must be obvious where the
+                    <strong>input</strong> element is used in out form.
+                    <br>But just to make sure - inspect the Element code and you'll see that the form contains three
+                    input sections: <br>
+                    1. Name <br>2. E-mail <br>3. And last one is a 'Send your message button' <br>
+                    Each one of those input elements contains <strong>type</strong> attribute, that defines the type of
+                    input it will
+                    accept.
+                    <br>The Name input's type is text - which means simple text area. <br> The E-mail's type is email,
+                    and
+                    it's there for a reason. It applies default validations to that field. You can try to type in an
+                    invalid email and see what happens. <br>Last one is a sumbit type input - which means that it's a
+                    some sort of button that is submitting our form. It also has a <strong>value</strong> attribute,
+                    which is the text inside of the button.
+                    <br>The message field could've been an input too, but I wanted to show you that the there is a
+                    element <strong>textarea</strong> for bigger text fields.
+                    <br>Each input element also has a <strong>name</strong> attribute, which is used to reference
+                    elements in a
+                    JavaScript, or to reference form data after a form is submitted. <br>They also contain an
+                    <strong>id</strong> attribute, which is self-explanatory.
+                </div>
+                <div class="column right">
+                     <form action="" class="myform" method="get">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name">
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_email">
+                            </li>
+                            <li>
+                                <label for="msg"><a href="/html/anchor/">Message:</a></label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li>
+                                <input type="submit" value="Send your message!">
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}

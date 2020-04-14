@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="content">
+        <div class="innercontent">
+            <div class="row">
+                {#                <div class="intro">#}
+                {#                    <h1>Introduction:</h1><br>#}
+                {##}
+                {#                    <br>#}
+                {#                    <br>#}
+                {#                </div>#}
+                <div class="column left">
+                    <img src="{% static 'img/html_css.png' %}">
+
+
+                </div>
+
+                <div class="column right">
+                    <div class="references">
+                        <h1><strong>References</strong></h1>
+                        <br>
+                        <ul>
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn">
+                                <li>
+                                    Learn web development guide by Mozilla
+                                </li>
+                            </a>
+
+                            <a href="https://www.w3.org/2009/cheatsheet/">
+                                <li>
+                                    HTML/CSS cheatsheet
+                                </li>
+                            </a>
+                            <br>
+                            <h3>After HTML</h3><br>
+                            <a href="https://www.tutorialspoint.com/http/http_methods.htm">
+                                <li>
+                                    HTML methods
+                                </li>
+                            </a>
+                            <a href="https://www.w3schools.com/css/">
+                                <li>
+                                    Basic CSS Tutorial
+                                </li>
+                            </a>
+
+                            <br>
+                            <h3>For further learning</h3>
+                            <br>
+                            <a href="https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf">
+                                <li>
+                                    Difference between Grid and Flexbox
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

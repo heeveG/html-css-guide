@@ -1,0 +1,97 @@
+.content {
+
+    /*background-color: rgba(255,165,0,0.2);*/
+    background-color: #3AAFA9;
+    transition: background-color;
+    flex: auto;
+}
+
+.innercontent {
+    width: 65%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    font-family: varela, "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    font-size: 18px;
+    /*background-color: rgba(255,165,0,0.01);*/
+    border-radius: 1%;
+    padding-top: 2%;
+    color: #17252a;
+}
+
+
+.row:after {
+    clear: both;
+}
+
+
+.column {
+    float: left;
+    padding-top: 0%;
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+.column.left {
+
+    width: 75%;
+    /*padding: 10px;*/
+    /*margin: 10px;*/
+    padding-right: 5%;
+
+
+}
+
+.column.right {
+    /*margin: 10px;*/
+    padding-top: 4%;
+    margin-left: 0%;
+    /*padding-left: 10px;*/
+    width: 15%;
+}
+
+
+.myform{
+    padding-left: 40%;
+}
+
+.myform ul{
+    display: table;
+}
+
+
+.myform input {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+    background-color: #def2f1;
+    /*background-color: #17252a;*/
+  color: #17252a;
+}
+
+.myform textarea{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+    background-color: #def2f1;
+    /*background-color: #3CBC8D;*/
+  color: #17252a;
+}
+
+.myform input[type=submit]{
+    width: 200px;
+}
+
+.myform input[type=submit]{
+    width: 200px;
+        cursor: pointer;
+
+}
+
+a {
+    color: #17252a;
+}

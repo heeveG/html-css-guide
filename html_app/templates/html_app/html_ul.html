@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'html_app/tutorials.css' %}">
+
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+
+
+        <div class="innercontent">
+            <h1>Unordered list</h1><br>
+            <div class="row">
+                <div class="column left">
+                    <br>
+                    By now, you know almost everything about this form. However, I never told you about its structure.
+                    <br><br>You can see in the Element code, that the very first element after the <strong>form</strong>
+                    element is
+                    <strong>ul</strong> element. <br>
+                    It defines a structure of the form - each input box lies within one <strong>li</strong> element.
+                    Such structure is very easy-to-read and easy-to-style one. <br><br>
+                    Now, I have been talking a lot about styling things, before you move to the next chapter about CSS
+                    (which might be more intermediate level), you must know how styling works. Each HTML tag contains
+                    the class attribute, which is used when styling your page in CSS. <br>
+                    You can observe that out form has class myform, which means we could style it by writing: <br>
+                    .myform {
+                    }
+                    in the css file. <br><br> You can style elements by id and by the tags too!
+                    <br> <br>Congratulations! You have completed a mini course about most important HTML tags. <br>Before
+                    you
+                    proceed to the CSS part, please read the information under the section "After HTML" provided <a
+                        href="/references/" title="Go to references">here</a>.
+                </div>
+                <div class="column right">
+                    <form action="" class="myform" method="get">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name">
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_email">
+                            </li>
+                            <li>
+                                <label for="msg"><a href="/html/anchor/">Message:</a></label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li>
+                                <input type="submit" value="Send your message!">
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}

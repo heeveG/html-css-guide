@@ -1,0 +1,92 @@
+
+img {
+    max-width: 40%;
+    height: auto;
+    padding-left: 35%;
+}
+
+.content {
+
+    /*background-color: rgba(255,165,0,0.2);*/
+    background-color: #3AAFA9;
+    transition: background-color;
+    flex: auto;
+}
+
+.innercontent {
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    font-family: varela, "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+
+    /*background-color: rgba(255,165,0,0.01);*/
+    border-radius: 1%;
+    padding-top: 2%;
+    color: #17252a;
+}
+
+.row:after {
+    clear: both;
+}
+
+
+.column {
+    float: left;
+    padding-top: 3%;
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+.column.left {
+
+    width: 45%;
+    /*padding: 10px;*/
+    /*margin: 10px;*/
+    padding-right: 5%;
+
+
+}
+
+.column.right {
+    /*margin: 10px;*/
+    padding-top: 4%;
+    margin-left: 5%;
+    /*padding-left: 10px;*/
+    width: 45%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column.left, .column.right {
+        width: 100%;
+    }
+}
+
+.btn {
+    color: white;
+    border: none;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 10% 30% 0;
+    cursor: pointer;
+    width: 250px;
+    height: 80px;
+    border-radius: 12px;
+    font-family: abc, "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    background-color: #2965f1;
+
+}
+
+.btn:hover {
+    transition: 0.5s;
+    background-color: #17252a;
+}
+
+
+.btn:focus {
+    outline: 0;
+}

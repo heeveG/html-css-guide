@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css_app/style.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="content">
+        <div class="innercontent">
+            <div class="row">
+                <div class="column left">
+
+
+                    <h1><strong>CSS</strong></h1>
+                    <br>
+                    CSS stands for Cascading Style Sheets with an emphasis placed on “Style.” While HTML is used to
+                    structure a web document (defining things like headlines and paragraphs, and allowing you to embed
+                    images, video, and other media), CSS comes through and specifies your document’s style—page layouts,
+                    colors, and fonts are all determined with CSS. <br>Think of HTML as the foundation (every house
+                    has
+                    one), and CSS as the aesthetic choices (there’s a big difference between a Victorian mansion and a
+                    mid-century modern home). <br><br>
+                    {#                    <br><br> <br>#}
+                    For a long time, the only reliable cross browser-compatible tools available for creating CSS layouts
+                    were things like floats and positioning. These are fine and they work, but in some ways they are
+                    also rather limiting and frustrating. In this tutorial we will take a look at two, more advanced
+                    approaches to building a layout : Flexbox and Grid.
+                    <form action="list/">
+                        <button class="btn" type="sumbit">
+                            Learn CSS
+                        </button>
+                    </form>
+
+                </div>
+
+                <div class="column right">
+                    <img src="{% static 'img/css.png' %}">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'html_app/list.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="content">
+        <div class="innercontent">
+            <h1><a href="/html">HTML</a></h1><br>
+
+            <ul>
+
+                <li>
+                    <h2>Form</h2><br>
+                    Form elements are probably one of the most important aspects of HTML that we come across when
+                    browsing the web. It allows communication between a client (more commonly known as the web browser)
+                    and a web server. Many of us have probably used forms at one time or another, such as when
+                    purchasing a book over the Internet, filling out product surveys or for web based email..
+                    <br>
+                    What is the Form Element?
+                    It's the section of the HTML document that may contain normal content, some markup, controls (or
+                    html element such as checkboxes, radio buttons, text fields, etc.) and labels on those controls.
+                    <br>
+                    A typical Form element may contain a variety of controls, and one or many controls on a given form.
+                    <br>
+                    A form element must have a start tag and an end tag, meaning all the controls will be between the
+                    form's open and close tags.
+                    <br>
+                    < form action="" > <br>.... rest of the controls will go here <br>< /form >
+                    <br>The most important form attributes are: action and method - which are quite self-explanatory,
+                    however we will see them 'in action' later.
+                    <br><br>
+                    <a href="/html/form/"><h3>Click here to find out more</h3></a>
+                </li>
+
+
+                <li>
+                    <h2>Input</h2><br>
+                    Input elements are another very important aspects of HTML.
+                    <br>
+                    The < input > element is used to create interactive controls for web-based forms in order to
+                    accept data from the user; a wide variety of types of input data and control widgets are available,
+                    depending on the device and user agent.
+                    <br>
+                    How an < input > works varies considerably depending on the value of its type attribute, hence the
+                    different types are covered in their own separate reference pages. If this attributes is not
+                    specified, the default type adopted is text.
+                    <br>
+                    There are a lot of type attributes for < input > element, which explains, why they are so important.
+                    They are used in many scenarios, but the most common one is forms. <br> It is obvious, that the
+                    forms
+                    themselves would not be so important without the < input > elements.
+                    <br><br>Apart from type attribute, < input > element has many others, such as autocomplete,
+                    autofocus,
+                    capture, checked, inputmode,
+                    max, min etc. <br>This gives the < input > element a lot of cool features to be used everywhere,
+                    while building your website.
+                    <br><br>
+                    <a href="/html/input/"><h3>Click here to find out more</h3></a>
+                </li>
+                <li>
+                    <h2>Anchor</h2><br>
+                    Links are yet another element, being one of the most important part of any web page. You have
+                    probably visited thousands and
+                    thousands of links as you have browsed the internet. Links are easier to create than you think. We
+                    can create links (hyperlinks or "anchors") by using the HTML <br> < a > < /a > tag. <br>
+                    <br>Anchors, unlike two previous tags, have a few attributes, however the main attribute "href" is
+                    used in every web-page you visit. <br><br>
+                    You can make links to any webpage on the internet. You can add as many links as you like. You can
+                    make any other HTML element a link - just by wrapping that element with an anchor tag. <br> Easy as
+                    that.
+                    <br>
+                    <br><br>
+                    <a href="/html/anchor/"><h3>Click here to find out more</h3></a>
+                </li>
+
+                <li>
+                    <h2>Unordered list</h2><br>
+                    The last one, but certainly not the least one - unordered lists (< ul >).<br>
+                    This element is yet another crucial part of HTML and any web-page. Even the web-page you are at
+                    right now is built using unordered lists. Actually, the text you are reading at the very moment is an
+                    item of unordered list. <br><br>
+                    < ul > elements give developers the possibility to organize web-page as they want, without making
+                    too much effort. <br>All you have to do - is create < ul > element and create a bunch of < li >
+                    elements inside of it. After that, you can style style them as much as you want, just by editing two
+                    elements: < ul > and < li >. <br>
+                    There is another list element in HTML - ordered list (or < ol >). It's pretty useful in some cases,
+                    but I've decided to include the < ul >, since in my experience I've used it a lot more often.
+                    <br><br>
+                    <a href="/html/ul/"><h3>Click here to find out more</h3></a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+{% endblock %}

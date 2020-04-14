@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'abc';
+    src: local('Abc'),
+    url('/static/fonts/14016.otf') format("truetype");
+}
+
+@font-face {
+    font-family: 'varela';
+    src: local('Varela'),
+    url('/static/fonts/Varela-Regular.ttf') format("truetype");
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /*background-color: #101010;*/
+}
+
+h1, h2, h3 {
+    font-family: abc, "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header,
+.footer {
+    flex: none;
+    background: #ddd;
+}
+
+
+.header {
+    width: 100%;
+    height: 100px;
+    /*display: block;*/
+    background-color: #def2f1;
+}
+
+.body {
+    background-color: grey;
+    position: absolute;
+}
+
+.innerheader {
+    width: 80%;
+    height: 100%;
+    /*display: block;*/
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo h1 {
+    height: 100%;
+    font-family: abc, "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 200;
+    color: #17252a;
+
+
+}
+
+.logo h1 a {
+    color: #17252a;
+}
+
+.logo h1 span {
+    font-weight: 800;
+}
+
+.nav {
+    float: right;
+    height: 100%;
+}
+
+.nav a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.nav a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: #3AAFA9;
+    font-family: abc, "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    padding: 30px;
+}
+
+
+.nav a:hover {
+    color: #17252a;
+    background-color: #2b7a78;
+    border-radius: 3%;
+    transition: 0.5s;
+
+}
+
+
+.footer {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #17252a;
+
+}
+
+.innerfooter {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+.logofooter {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logofooter h1 {
+    height: 100%;
+    font-size: 15px;
+    font-family: abc, "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+    color: #2b7a78;
+
+    font-weight: 200;
+
+}
+
+
+.foot {
+    float: right;
+    height: 100%;
+}
+
+.foot a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.foot a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: #def2f1;
+    font-family: abc, "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    padding: 30px;
+}
+
+
+.foot a:hover {
+    color: #17252a;
+    background-color: #2b7a78;
+    border-radius: 3%;
+    transition: 0.5s;
+}
+
+/*.logofooter .name{*/
+/*    color: #def2f1;*/
+/*}*/

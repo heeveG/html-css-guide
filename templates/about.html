@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="content">
+        <div class="innercontent">
+            <div class="row">
+                {#                <div class="intro">#}
+                {#                    <h1>Introduction:</h1><br>#}
+                {##}
+                {#                    <br>#}
+                {#                    <br>#}
+                {#                </div>#}
+                <div class="column left">
+                    <img src="{% static 'img/html_css.png' %}">
+
+
+                </div>
+
+                <div class="column right">
+                    <h1><strong>About this web-app</strong></h1>
+                    <br>
+
+                    This web-app was created mainly for university project. However, I tried to make it as usable as
+                    possible. All the features and scripts are free to use. You may also contact me in case you have
+                    found a mistake. Take care ;)
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

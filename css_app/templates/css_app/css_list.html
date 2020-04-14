@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css_app/list.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="content">
+        <div class="innercontent">
+            <h1><a href="/css">CSS</a></h1><br>
+
+            <ul>
+
+                <li>
+                    <h2>Flexbox Layout</h2><br>
+                    CSS Flexbox has become extremely popular amongst front-end developers the last couple of years. This
+                    isn’t surprising, as it has made it a lot easier for us to create dynamic layouts and align content
+                    within containers.
+                    <br><br>Flexbox is the best choice for one dimensional layouts. That means, if you're building a
+                    header,
+                    for example, Flexbox layout will give a lot of flexibility for such task.
+                    <br><br>Flexbox allows elements to align and distribute space within a container. Using flexible
+                    widths and heights, elements can be aligned to fill a space or distribute space between elements,
+                    which makes it a great tool to use for responsive design systems. <br><br>However, Flexbox should
+                    not always be used. Understanding a Flexbox means knowing when to use it. For example Flexbox should
+                    not be applied to every single container. Some basic tasks are easily solvable with basic CSS. It's
+                    like going to the shop on a tank.
+                    <br><br>
+                    The examples I will provide you will be both examples when to use or when not to use Flexbox, so you
+                    can build your web pages wisely!
+                    <br><br>
+                    <a href="/css/flexbox/"><h3>Click here to find out more</h3></a>
+                </li>
+
+
+                <li>
+                    <h2>Grid Layout</h2><br>
+                    Grid layout - is relatively new CSS styling method and it's got a lot of capabilities, just like
+                    Flexbox. <br>In some cases it might be better than Flexbox, in others it won't. So it is crucial to
+                    understand both methods and apply each, only when there is need to. <br> <br>
+                    Unlike Flexbox layout, Grid is made for two dimensional layouts. For example, if you are planning on
+                    creating entire layout in two dimensions, which means using both rows and columns, then Grid is your
+                    choice.
+                    <br><br>
+                    Same as the Flexbox method, Grid should not be used for easy tasks, well handled by default CSS.
+                    There are many ways to combine the Flexbox and Grid methods and that is what I, personally, find the
+                    best decision - combine Flexbox and Grid. For example - use Flexbox for navbars and footers; if you
+                    want to line up all items vertically - use Grid; if you want the items to keep their
+                    natural width - use Flexbox.
+                    <br><br> There are many more examples, some of which I will try to cover, but most of it comes from
+                    experimenting, so go ahead - read the last part of this tutorial and apply your knowledge in building a read web-page.
+                    <br><br>
+                    <a href="/css/grid/"><h3>Click here to find out more</h3></a>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </div>
+
+{% endblock %}

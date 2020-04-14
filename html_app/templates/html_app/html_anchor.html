@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'html_app/tutorials.css' %}">
+
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+
+
+        <div class="innercontent">
+            <h1>Anchor</h1><br>
+            <div class="row">
+                <div class="column left">
+                    <br>
+                    If you haven't yet noticed, the Message field is not only different from the other ones by being
+                    <strong>textarea</strong> element, but it also contains an anchor. <br><br>
+                    When you click it, it actually redirects you to the /html/anchor/ page, which, in fact, changes
+                    nothing, but is a good example to show my point.
+                    <br><br> Anchors usually have <strong>href</strong> attribute, which points to the link to be
+                    redirected to. <br><br>They also have target attribute, which might be helpful sometimes. It specifies
+                    where to open the linked document. <br>Another useful attribute is <strong>title</strong>. It
+                    specifies extra information about an element. <br>Here is an example - <a
+                        href="https://www.google.com/" title="Go to google.com">Hover over me</a> <br><br>
+                    Anchors are easy, but they are very crucial part, when building any website.
+                </div>
+                <div class="column right">
+                    <form action="" class="myform" method="get">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name">
+                            </li>
+                            <li>
+                                <label for="mail">E-mail:</label>
+                                <input type="email" id="mail" name="user_email">
+                            </li>
+                            <li>
+                                <label for="msg"><a href="/html/anchor/">Message:</a></label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li>
+                                <input type="submit" value="Send your message!">
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}
