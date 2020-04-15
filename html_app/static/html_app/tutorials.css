@@ -95,3 +95,19 @@
 a {
     color: #17252a;
 }
+
+.goback {
+
+    position: absolute;
+    bottom: 15%;
+        padding: 10px;
+    border-radius: 10px;
+    color: #17252a;
+}
+
+.goback:hover{
+    background-color: #def2f1;
+   color: #f06529;
+        transition: 0.5s;
+
+}

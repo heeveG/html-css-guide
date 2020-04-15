@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f09e5c9d-4b4c-4eb4-8e0e-c42ad5e36aad" name="Default Changelist" comment="" />
+    <list default="true" id="f09e5c9d-4b4c-4eb4-8e0e-c42ad5e36aad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css_app/static/css_app/tutorial.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css_app/templates/css_app/css_flexbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/css_app/templates/css_app/css_flexbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css_app/templates/css_app/css_grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/css_app/templates/css_app/css_grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_app/static/html_app/tutorials.css" beforeDir="false" afterPath="$PROJECT_DIR$/html_app/static/html_app/tutorials.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_app/templates/html_app/html_anchor.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_app/templates/html_app/html_anchor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_app/templates/html_app/html_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_app/templates/html_app/html_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_app/templates/html_app/html_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_app/templates/html_app/html_input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html_app/templates/html_app/html_ul.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_app/templates/html_app/html_ul.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/references.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/references.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +27,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aU6YaQSBw8MsGFsEtJW4ihvLji" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -83,7 +100,8 @@
       <workItem from="1586777875110" duration="28968000" />
       <workItem from="1586815289020" duration="3315000" />
       <workItem from="1586857106495" duration="20411000" />
-      <workItem from="1586891823511" duration="4535000" />
+      <workItem from="1586891823511" duration="4633000" />
+      <workItem from="1586932333465" duration="12452000" />
     </task>
     <servers />
   </component>
@@ -91,10 +109,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="616" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586891873944">
+    <state x="616" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586932333912">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="616" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1586891873944" />
+    <state x="616" y="381" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1586932333912" />
     <state x="100" y="127" width="1720" height="853" maximized="true" key="dock-window-1" timestamp="1586797245697">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

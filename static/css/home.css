@@ -94,11 +94,15 @@ form .btn:focus {
 }
 
 .references li {
-    color: #17252a;
-    text-decoration: underline;
     padding: 1%;
 }
 
-.references li:hover{
+
+.references a {
+    color: #17252a;
+    text-decoration: underline;
+}
+
+.references a:hover{
     color: #def2f1;
 }

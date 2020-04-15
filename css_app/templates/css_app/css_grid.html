@@ -1,15 +1,109 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block link %}
-    <link rel="stylesheet" href="{% static 'css_app/list.css' %}">
+    <link rel="stylesheet" href="{% static 'css_app/tutorial.css' %}">
 
 {% endblock %}
 
 {% block content %}
 
     <div class="content">
-            
-    I'm grid
+
+        <div class="innercontent">
+            <h4>In this part of the tutorial we will take a look at a couple of examples of how Grid layout
+                works</h4>
+            <br>
+            <h3>Defining a Grid</h3>
+            <div class="text">
+                To define a Grid use display:grid or display:inline-grid on the parent element. You can then create a
+                grid using the grid-template-columns and grid-template-rows properties
+            </div>
+            <div class="code">
+                .grid-container { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;display: grid; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 200px 200px 200px; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-rows: 100px 100px; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-gap: 10px; <br>
+                }
+            </div>
+
+            <div class="text">We have just created a grid that consists of three columns of width 200px and two rows of
+                height 100px.
+                <br>Now, to create grid items - children of out grid-container, we don't actually need to
+                specify any grid-specific settings - just style them as usual containers
+            </div>
+            <div class="code">
+                .grid-child { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;padding: 20px; <br>
+                }
+            </div>
+
+            <div class="text">
+                All direct children of the parent now become grid items and the auto-placement algorithm lays them out,
+                one in each grid cell. Creating extra rows as needed
+            </div>
+            <div class="grid-container">
+                <div class="grid-child"></div>
+                <div class="grid-child"></div>
+                <div class="grid-child"></div>
+                <div class="grid-child"></div>
+                <div class="grid-child"></div>
+                <div class="grid-child"></div>
+
+            </div>
+            <div class="text">Just like that, we have built our first Grid container</div>
+            <h3>Defining a Grid with custom areas</h3>
+            <div class="text">In this example we are going to build a Grid layout, that is going to contain grid cells
+                of size bigger than default cell. You can see how that looks at the bottom. <br>
+                <br>Here is the code for the parent container
+            </div>
+            <div class="code">
+                .grid-container-2 { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;display: grid; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-gap: 10px; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 200px 200px 200px; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-rows: 100px 100px; <br>
+                }
+            </div>
+            <div class="text">Now, we are going to define a styling for each of child elements separately
+            </div>
+            <div class="code">
+                .grid-child-2 { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; padding: 20px; <br>
+                } <br>
+
+                .a { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; grid-column: 1 / 3; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; grid-row: 1; <br>
+                } <br>
+                .b { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; grid-column: 3 ; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; grid-row: 1 / 3; <br>
+                } <br>
+                .c { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; grid-column: 1 ; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; grid-row: 2 ; <br>
+                } <br>
+                .d { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; grid-column: 2; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; grid-row: 2; <br>
+                }
+            </div>
+            <div class="text">Observe, how we distribute the space of the grid between five child elements (a-d)</div>
+            <div class="grid-container-2">
+                <div class="grid-child-2 a">A</div>
+                <div class="grid-child-2 b">B</div>
+                <div class="grid-child-2 c">C</div>
+                <div class="grid-child-2 d">D</div>
+            </div>
+            <div class="text">
+                Thus, we have created out custom grid.
+            </div>
+            <br>
+
+            <h3><a href="/css/list" class="goback">Back</a></h3>
+            <br><br>
+        </div>
 
     </div>
 

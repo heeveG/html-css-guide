@@ -7,7 +7,7 @@
 @font-face {
     font-family: 'varela';
     src: local('Varela'),
-    url('/static/fonts/Varela-Regular.ttf') format("truetype");
+    url('/static/fonts/Inter-Regular.ttf') format("truetype");
 }
 
 * {
@@ -19,7 +19,7 @@
     /*background-color: #101010;*/
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: abc, "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
 }
 

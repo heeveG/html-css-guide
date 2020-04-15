@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block link %}
-    <link rel="stylesheet" href="{% static 'css_app/list.css' %}">
+    <link rel="stylesheet" href="{% static 'css_app/tutorial.css' %}">
 
 {% endblock %}
 
@@ -9,7 +9,144 @@
 
     <div class="content">
 
-    I'm flexbox
+        <div class="innercontent">
+            <h4>In this part of the tutorial we will take a look at a couple of examples of how Flexbox layout
+                works</h4>
+            <br>
+            <h3>Stretch all, fixed spacing</h3>
+            <div class="text">
+                In the example below you can see five blocks built with Flexbox layout. <br>There is a one parent
+                container,
+                which is styled with <strong>display</strong> set to flex <br>
+            </div>
+            <div class="code">.container { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; display: flex; <br>
+                }
+            </div>
+            <br>
+            <div class="text">
+                and the child elements - five containers, that are styled like so <br>
+            </div>
+            <div class="code">
+                .item { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; flex-grow: 1; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;height: 100px; <br>
+                }
+            </div>
+            <div class="container">
+                <div class="item">
+
+                </div>
+                <div class="item">
+
+                </div>
+                <div class="item">
+
+                </div>
+                <div class="item">
+
+                </div>
+                <div class="item">
+
+                </div>
+
+
+            </div>
+            <br>
+            <div class="text">
+                The main style settings to look at are <strong>display</strong> and <strong>flex-grow</strong>. Display
+                sets the layout method for child elements of the container and flex-grow will increase the amount of
+                space that an element is allowed to stretch to compared to any other element.
+                <br>You can experiment with it by stretching and shrinking the window.
+                <br><br><br>
+            </div>
+            <h3>Stretch middle, fixed spacing</h3>
+            <div class="text">
+
+                This one is an extended version of the previous example.
+                The same parent container is used, however, child elements are now styled differently <br>
+            </div>
+            <div class="code">
+                .item-2 { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;height: 100px; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;width: 100px; <br>
+                }
+            </div>
+            <br>
+            <div class="code">
+                .item-middle { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;flex-grow: 1; <br>
+                }
+            </div>
+            <br>
+            <div class="text">
+
+                Now only certain elements have the <strong>flex-grow</strong> setting, while others remain
+                unchanged, when scaling<br> <br>
+            </div>
+            <div class="container">
+                <div class="item-2">
+
+                </div>
+                <div class="item-middle">
+
+                </div>
+                <div class="item-2">
+
+                </div>
+            </div>
+            <br><br>
+            <h3>3x3 Grid</h3>
+            <div class="text">
+
+                Now we will create a 3x3 grid with Flexbox layout method. <br> <br>The CSS of the parent container
+            </div>
+            <div class="code">
+                .container-2 { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;display: flex; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;justify-content: space-between; <br>
+                }
+            </div>
+            <div class="text">
+
+                The child containers
+            </div>
+            <div class="code">
+                .item-3 { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;flex: 0 32%; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;height: 100px; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 2%; <br>
+                }
+
+            </div>
+
+            <div class="text">
+
+                The result
+            </div>
+
+            <div class="container-2">
+                <div class="item-3"></div>
+                <div class="item-3"></div>
+                <div class="item-3"></div>
+                <div class="item-3"></div>
+                <div class="item-3"></div>
+                <div class="item-3"></div>
+                <div class="item-3"></div>
+                <div class="item-3"></div>
+                <div class="item-3"></div>
+
+            </div>
+            <div class="text">
+
+                <br>Same as before, containers are perfectly scalable
+            </div>
+            <br>
+
+            <h3><a href="/css/list" class="goback">Back</a></h3>
+            <br><br>
+        </div>
 
     </div>
 
